@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login in on PlaySpot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <form method="post"> 
+        <div class="container-fluid">
+            <form action="/login" method="post">
+                <div class="login-background">
+                    <div class="login-wrapper">
+                        <div class="row mt-3">
+                            <div class="col-12 d-flex justify-content-center align-items-center">
+                                <img src="images/logo.png">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h3 style="color: #ffffff;font-weight: bold;">Log in to PlaySpot</h3>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <input type="text" name="email" placeholder="Email" class="login-email" required="">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <input type="password" name="password" placeholder="Password" class="login-password" required="">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 login-btn-wrapper">
+                                <input type="submit" name="login" value="Log in" class="login-btn">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 d-flex" style="font-size: 13px;justify-content: center;">
+                                <a href="" class="">Forgot password?</a>
+                                <p style="color: #ffffff;margin: 0px 5px;"> . </p>
+                                <a href="/signup" class="">Sign up for PlaySpot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>            
+        </div>
+</body>
+</html>

@@ -1,0 +1,453 @@
+ 
+/* DEFAULTS */
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0
+}
+input:focus {
+	outline: none;
+}
+p, h1, h2, h3, h4, h5, h6, button {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* BOOTSTRAP */
+.row {
+	margin: 0;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+
+
+/* CONTACT HEADER */
+.contact-header-container {
+	padding: 1% 5%;
+	font-size: 14px;
+	background-color: #1e1f29;
+}
+.contact-header-li {
+	display: flex;
+}
+.contact-header-container li {
+	padding-right: 15px;
+}
+.contact-header-container a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.contact-header-container a:hover{
+	color: #d10024;
+	transition: all 0.1s ease-out;	
+	border-bottom: 2px solid #d10024;
+}
+@media only screen and (max-width: 600px) {
+	.contact-header-li {
+		flex-direction: column;
+	}
+}
+
+
+
+/* MAIN HEADER */
+.search-btn {
+	background-color: #d31737;
+	border:none;padding: 8px;
+	color:#ffffff;
+}
+.main-header-container {
+	padding: 1% 5%;
+	font-size: 15px;
+	background-color: #15161d;
+}
+.main-header-container a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.main-header-search-bar-div input[type=text] {
+	width: 80%;
+	height: 2.8em;
+	padding-left: 15px;
+	border-radius: 20px;
+	border-width: 0px;
+}
+.main-header-search-bar-div a {
+	background-color: #d10024;
+	border-radius: 10px;
+	align-self: center;
+	padding: 10px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.main-header-cart-div {
+	margin-right: 20px;
+}
+.main-header-cart-div a:hover{
+	color: #d10024;
+	transition: all 0.1s ease-out;
+	border-bottom: 2px solid #d10024;
+}
+.main-header-logout-div a:hover{
+	color: #d10024;
+	transition: all 0.1s ease-out;	
+	border-bottom: 2px solid #d10024;
+}
+@media only screen and (max-width: 600px) {
+	.main-header-container .row {
+		flex-direction: column;
+		padding: 5px 0px;
+	}
+	.main-header-search-bar-div {
+		max-width: 80%;
+		display: flex;
+		padding-top: 5px;
+	}
+	.main-header-container .col-2 {
+		display: contents;
+	}
+	.main-header-container input[type=text]{
+		width: 100%;
+	}
+	.main-header-cart-div, .main-header-logout-div {
+		padding-top: 5px;
+	}
+	.main-header-logo-div {
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.main-header-logo-div {
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+	.main-header-logo-div {
+		justify-content: center!important;
+		margin-top: 10px;
+	}
+	.main-header-container {
+		padding: 0% 5%;
+	}
+}
+@media only screen and (max-width: 1090px) {
+	.main-header-logo-div h2 {
+		font-size: 30px;
+	}
+	.main-header-search-bar-div input[type=text] {
+		width: 70%;
+	}
+}	
+
+
+
+/* MENU SECTION */
+.menu-container {
+	border-top: 3px solid #d10024;
+	padding: 1% 5%;
+	border-bottom: 2px solid #e4e7ed;
+}
+.menu-container ul {
+	margin: 0 auto;
+}
+
+.menu-container li {
+	margin-left: 15px;
+}
+.menu-container a {
+	text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+.menu-container a:hover{
+	border-bottom: 2px solid #d10024;
+	color: #d10024;
+	transition: all 0.1s ease-out;	
+}
+
+
+
+/* NEW GAMES */
+.newgames-container {
+	padding: 0% 5%;
+}
+.newgames-row {
+	align-items: baseline;
+}
+.newgames-row div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.newgames-row button {
+	display: block;
+}
+.cart-button {
+	background-color: #d31737;
+	color: #ffffff;
+	font-weight: bold;
+}
+.cart-button:hover{
+	background-color: #ffffff;
+	color: #d31737;
+	font-weight: bold;
+	border: 1px solid #d31737;
+	transition: all 0.3s ease-out;
+}
+.container-footer{
+	background-color: #1e1f29;  ;
+}
+.headings h5{
+	color: #d10024;
+}
+.newgame-category, .newgame-name {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 5px;
+}
+
+
+
+/**/
+.promotional-banner-wrapper .col-12 {
+	padding: 0;
+}
+.promotional-banner-wrapper img {
+	width: 100%;
+	height: 65vh;
+}
+@media only screen and (max-width: 578px) {
+	.promotional-banner-wrapper img {
+		width: 100%;
+		height: 50vh;
+	}
+}
+
+
+/* FOOTER */
+.container-footer {
+	padding: 2% 5%;
+}
+.links a{
+	color: white;
+	text-decoration: none;
+}
+.links a:hover{
+	border-bottom: 2px solid #d10024;
+	color: #d10024;
+	transition: all 0.1s ease-out;	
+	
+}
+.container-footer li, .container-footer h5 {
+	text-align: left;
+}
+@media only screen and (max-width: 600px) {
+	.container-footer{
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+
+
+/*Creators Section*/
+.creators-section {
+	padding: 2% 5%;
+	background-color: #15161d;
+}
+.profile-card {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height:368px;
+  border:none;
+  margin-bottom: 10px;
+}
+.profile-card .background-block {
+    float: left;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.profile-card .background-block .background {
+  width:100%;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+   -webkit-transform: scale(1.8);
+  transform: scale(2.8);
+}
+.profile-card .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  color:#232323;
+  float:left;
+  background:#efefef;
+  height:50%;
+  border-radius:0 0 5px 5px;
+  position: relative;
+  z-index: 9999;
+}
+.profile-card .card-content::before {
+    content: '';
+    background: #efefef;
+    width: 120%;
+    height: 100%;
+    left: 11px;
+    bottom: 51px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-13deg);
+}
+.profile-card .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 125px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index:99999;
+}
+.profile-card h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size:25px;
+}
+.profile-card h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top:10px;
+}
+.profile-card i {
+  display: inline-block;
+    font-size: 16px;
+    color: #232323;
+    text-align: center;
+    border: 1px solid #232323;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+.profile-card .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+}
+.profile-card .icon-block a{
+    text-decoration:none;
+}
+.profile-card i:hover {
+  background-color:#232323;
+  color:#fff;
+  text-decoration:none;
+}
+.icon-block a {
+	padding: 5px;
+}
+
+
+
+/* COPYRIGHTS */
+.copyrights-wrapper {
+	background-color: #1e1f29;
+	color: #ffffff;
+	font-size: 13px;
+	padding: 10px 0px;
+}
+
+
+
+/* SIGN UP */
+.signup-background, .login-background {
+	background-color: #1e1f29;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.signup-wrapper, .login-wrapper {
+	height: 80vh;
+	background-color: #15161d;
+	width: 100vh;
+	padding: 0px 15px;
+	border-radius: 20px;
+}
+.signup-wrapper {
+	position: relative;
+}
+.signup-wrapper input[type=text], .signup-wrapper input[type=password]{
+	width: 100%;
+	height: 50px;
+	border: none;
+	font-size: 18px;
+}
+.login-wrapper input {
+	width: 100%;
+	height: 50px;
+	border: none;
+	font-size: 18px;
+}
+.login-email, .signup-email, .login-password, .signup-name, .signup-password {
+	padding-left: 10px;
+}
+.signup-btn-wrapper {
+	bottom: 15px;
+	right: 10px;
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+}
+.signup-btn, .login-btn {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #d31737;
+	padding: 10px 15px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 25px;
+}
+.login-btn-wrapper {
+	text-align: center;
+}
+.signup-btn:hover, .login-btn:hover {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #c1112f;
+}
+@media only screen and (max-width: 670px) {
+	.signup-wrapper, .login-wrapper {
+		width: 100%;
+		height: 100vh;
+		border-radius: 0;
+	}
+	.signup-btn-wrapper {
+		bottom: 10vh;
+	}
+	.login-btn {
+		padding: 15px 40%;
+	}
+}
+@media only screen and (max-width: 372px) {
+	.login-btn {
+		padding: 15px 36%;
+	}	
+}

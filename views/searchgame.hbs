@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Playspot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		{{> contactheader}}
+		{{> mainheader}}
+		{{> menu}}
+
+        {{!-- Seacrhed games --}}
+        <div>
+			<div class="mt-3 mb-3" style="padding: 0% 5%;">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="font-weight-bold">Search Results</h2>
+					</div>
+				</div>
+			</div>
+            <div style="padding: 0% 5%;text-align:center">
+				<div class="row">
+					{{#each searchedGames}}
+					<div class="col-md-3 col-sm-6 col-12 mt-2 mb-2" style="display: flex;flex-direction:column;">
+						<img src="{{this.image}}" class="img-fluid">
+						<h6 class="newgame-category">{{this.category}}</h6>
+						<h6 class="newgame-name">{{this.name}}</h6>
+						<button type="button" class="btn mt-2 cart-button">Add to Cart</button>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+        </div>
+        {{> footer}}
+		{{> creators}}
+
+	</div>
+</body>
+</html>
